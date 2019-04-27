@@ -15,6 +15,17 @@ namespace SingletonLogin
 
         public static Usuario _instance;
         
+        public Usuario Criar()
+        {
+            if(_instance == null)
+            {
+                _instance = new Usuario();
+            }
+            return _instance;
+        }
+
+
+
         private Usuario() { }
 
         public string nome

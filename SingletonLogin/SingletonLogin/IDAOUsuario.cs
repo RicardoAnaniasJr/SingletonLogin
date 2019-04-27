@@ -11,6 +11,7 @@ namespace SingletonLogin
         List<Usuario> GetAll();
         Usuario Getusuario(string login, int senha);
         void Update();
+        void Insert(string nome, int cpf, string login, int senha);
 
 
 
